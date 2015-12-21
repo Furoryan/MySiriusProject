@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.EObject"/>
+<fullyQualifiedTypeName name="com.google.common.base.Splitter"/>
+<fullyQualifiedTypeName name="com.google.common.base.CharMatcher"/>
+<fullyQualifiedTypeName name="com.google.common.base.Ascii"/>
+</qualifiedTypeNameHistroy>

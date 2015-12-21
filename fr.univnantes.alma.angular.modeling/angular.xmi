@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<angular:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angular="http://www.univnantes.fr/alma/angular" xsi:schemaLocation="http://www.univnantes.fr/alma/angular ../fr.univnantes.alma.angular/model/angular.ecore" name="TestProject">
+  <folders name="Root">
+    <folders name="EmptyFolder"/>
+    <folders name="NonEmptyFolder">
+      <modules>
+        <moduleElements xsi:type="angular:ESClass" name="NonEmptyFolderClass"/>
+      </modules>
+    </folders>
+    <folders name="NG">
+      <modules path="MyModule">
+        <moduleElements xsi:type="angular:NgModule" name="MyNgModule" ngModuleElements="//@folders.0/@folders.2/@modules.0/@moduleElements.1 //@folders.0/@folders.2/@modules.0/@moduleElements.2 //@folders.0/@folders.2/@modules.0/@moduleElements.3 //@folders.0/@folders.2/@modules.0/@moduleElements.4"/>
+        <moduleElements xsi:type="angular:NgDirective" name="myDirective"/>
+        <moduleElements xsi:type="angular:NgController" name="mySecondController"/>
+        <moduleElements xsi:type="angular:NgController" name="myController"/>
+        <moduleElements xsi:type="angular:NgService" name="myService"/>
+      </modules>
+    </folders>
+    <modules path="app/users.js">
+      <moduleElements xsi:type="angular:ESClass" name="NewUser" extends="//@folders.0/@modules.0/@moduleElements.2">
+        <fields name="myInt" type="int"/>
+      </moduleElements>
+      <moduleElements xsi:type="angular:ESClass" name="Users">
+        <fields name="NewField" type="X"/>
+      </moduleElements>
+      <moduleElements xsi:type="angular:ESClass" name="User"/>
+      <moduleElements xsi:type="angular:ESClass" name="UpdateUser">
+        <fields name="NewField"/>
+        <fields name="NewField"/>
+      </moduleElements>
+      <moduleElements xsi:type="angular:ESClass" name="ThisIsASuperClas" extends="//@folders.0/@modules.0/@moduleElements.3" abstract="true">
+        <fields name="nom" type="String"/>
+        <functions name="myFunction" type="String">
+          <parameters name="name" type="string"/>
+          <parameters name="age" type="int"/>
+        </functions>
+      </moduleElements>
+    </modules>
+    <modules path="app/common.js"/>
+    <pages path="Doc"/>
+  </folders>
+</angular:Project>
